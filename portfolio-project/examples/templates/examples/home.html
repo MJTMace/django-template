@@ -51,21 +51,19 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1>[ MACE · SPACE ]</h1>
-      <p class="lead text-muted">Here are some examples of things I've been working on, presented using a website built using Django and a PostgreSQL database: </p>
+     <img src="{% static 'photo_MM.jpg' %}" height=150> </img>
       <p>
-        <a href="https://github.com/MJTMace/django-template" class="btn btn-primary my-2">GitHub Repo</a>
-        <a href="#" class="btn btn-secondary my-2">A secondary button</a>
+        <a href="https://github.com/MJTMace/django-template" class="btn btn-secondary my-2">GitHub Repo</a>
       </p>
-     <img src="{% static 'photo_MM.jpg' %}" height=200> </img>
-    </div>
+
+      <p class="lead text-muted">Here I demonstrate a website built using Django and PostgreSQL of some things I've been working on <br>[click on the thumbnails for further information] </br></p>
+   </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
-
       <div class="row">
       {% for example in examples.all %}
-
         <div class="col-md-4">
 	<a href="{% url 'detail' example.id %}">
           <div class="card mb-4 shadow-sm">
@@ -83,16 +81,6 @@
   </div>
 
 </main>
-
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
 
     <!-- Bootstrap core JavaScript
     ======================================= -->

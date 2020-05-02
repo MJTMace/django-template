@@ -50,13 +50,13 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Details</h1>
-	<img src ="{{ example.image.url }}" height=300>
+      <h1>{{ example.summary }}</h1>
+	<img src ="{{ example.image.url }}" height=200>
       <p class="lead text-muted"> {{ example.summarydetail }} </p>
-           <img src="{{ example.imagedetail1.url }}" height=300> </img>
-           <img src="{{ example.imagedetail2.url }}" height=300> </img>
+           <img src="{{ example.imagedetail1.url }}" height=235> </img>
+           <img src="{{ example.imagedetail2.url }}" height=235> </img>
 	<p>
-        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+        <a href="{% url 'home' %}" class="btn btn-secondary my-2">Back</a>
       </p>
 
     </div>
